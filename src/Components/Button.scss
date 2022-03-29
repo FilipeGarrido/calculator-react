@@ -1,0 +1,39 @@
+$bgButton:#f0f0f0;
+$borderButton: solid 1px #888;
+.button {
+    font-size: 1.4em;
+    background-color: $bgButton;
+    border: none;
+    border-right: $borderButton;
+    border-bottom: $borderButton;
+    outline: none;
+    &.ac {
+        grid-column: span 3;
+        background-color: rgb(218, 181, 111);
+        &:active {
+            background-color: rgb(141, 112, 59);
+        }
+    }
+    &.operator {
+        background-color: rgb(218, 181, 111);
+        &:active {
+            background-color: rgb(141, 112, 59);
+        }
+    }
+    &.zero {
+        grid-column: span 2;
+        &:active {
+            background-color: #807d7d;
+        }
+    }
+    &.number {
+        &:active {
+            background-color: #807d7d;
+        }
+    }
+    &.dot {
+        &:active {
+            background-color: #807d7d;
+        }
+    }
+}
